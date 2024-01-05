@@ -36,6 +36,7 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , mtl >=2.3.1
   default-language: Haskell2010
 
 executable finite-automata-simulator-exe
@@ -50,6 +51,7 @@ executable finite-automata-simulator-exe
   build-depends:
       base >=4.7 && <5
     , finite-automata-simulator
+    , mtl >=2.3.1
   default-language: Haskell2010
 
 test-suite finite-automata-simulator-test
@@ -65,4 +67,5 @@ test-suite finite-automata-simulator-test
   build-depends:
       base >=4.7 && <5
     , finite-automata-simulator
+    , mtl >=2.3.1
   default-language: Haskell2010
